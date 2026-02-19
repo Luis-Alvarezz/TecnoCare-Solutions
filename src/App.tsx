@@ -1,4 +1,5 @@
 import ActivityList from "./components/ActivityList"
+import { Footer } from "./components/Footer"
 import Header from "./components/Header"
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <ActivityList />
+      <div className="mx-3 md:mx-4 lg:mx-24">
+        <ActivityList />
+      </div>
+      <Footer/>
     </>
   )
 }
