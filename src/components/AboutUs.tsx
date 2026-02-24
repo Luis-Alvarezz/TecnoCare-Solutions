@@ -8,7 +8,7 @@ export const AboutUs = ({informationPersonal} : AboutUsProp) => {
   return (
     <div className="mt-16">
       <h2 className="text-5xl uppercase font-bold text-center text-orange-700 mb-16">Acerca de nosotros</h2>
-      <div className="flex flex-col md:flex md:flex-row gap-8 justify-between lg:mx-80">
+      <div className="flex flex-col md:flex-row gap-8 justify-center max-w-6xl mx-auto">
         { informationPersonal.map(person => (
           <div className="text-center bg-yellow-700 px-6 py-12 rounded-xl w-full max-w-md max-h-screen min-h-[28rem] transition-all duration-300 ease-out hover:scale-105">
             <h2 className="text-xl font-bold text-slate-200 mb-4">{ person.name }</h2>
