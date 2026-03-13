@@ -1,9 +1,28 @@
+import { useEffect } from "react"
 
 export default function Header() {
+
+  // useEffect(() => {
+  //   const header = document.querySelector('.header')
+  //   const sobreNosotros = document.querySelector('.sobre-nosotros')
+
+  //   const handleScroll = () => {
+  //     console.log(sobreNosotros?.getBoundingClientRect().bottom) // * Obtener Coordenadas de pantalla
+  //     if (sobreNosotros?.getBoundingClientRect().bottom < 1) {
+  //       console.log('Ya lo pasaste');
+  //       header?.classList.add('fixed')
+  //     } else {
+  //       header?.classList.remove('fixed')
+  //       console.log('Aun no lo pasas');
+  //     }
+  //   }
+  //   window.addEventListener('scroll',handleScroll)
+  // }, [])
+
   return (
     <>
       <div className="">
-        <header className="bg-amber-900 py-5">
+        <header className="bg-amber-900 py-5 fixed top-0 left-0 w-full z-20">
           <div className="flex justify-between items-center gap-2 max-w-7xl mx-auto">
             <div>
               <a className="text-white text-4xl font-extrabold" href="/">
